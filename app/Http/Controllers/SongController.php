@@ -6,6 +6,8 @@ use App\Models\Song;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
+
 
 class SongController extends Controller
 {
@@ -30,6 +32,8 @@ class SongController extends Controller
         // Execute yt-dlp command to download audio
         $command = "yt-dlp --extract-audio --audio-format mp3 -o \"mp3/%(title)s.%(ext)s\" -- $videoLink";
         $output = shell_exec($command);
+
+        echo('output: ' .  $output);
 
         // Parse the output to get the path to the downloaded MP3 file
         $matches = [];
@@ -58,36 +62,45 @@ class SongController extends Controller
         ]);
 
         $videoInfo = $response->json();
-        
         // Download and save the MP3 file using yt-dlp
         $mp3Path = $this->downloadMp3FromYouTube($request->videoLink);
-        $link = asset("storage/app/public/".$mp3Path);
+        echo("mp3: " . $mp3Path);
 
-        $contents = Storage::get('Como Un Cristal.mp3');
-        echo("contents: ". $contents);
-        if ($mp3Path) {
-            Storage::put('public/mp3/' . $videoId . '.mp3', file_get_contents($mp3Path));
-            // Save the MP3 file to the storage folder
-            echo("ok");
-            // Optionally, you can save the MP3 file path to your database or use it as needed
-        } else {
-            return response()->json(['error' => "Failed to download MP3"], 500);
-        }
+        $song = new Song([
+            'name' => $videoInfo['items'][0]['snippet']['title'],
+            'description' => $videoInfo['items'][0]['snippet']['description'],
+            'slug' => Str::slug($videoInfo['items'][0]['snippet']['title']),
+            'author' => $videoInfo['items'][0]['snippet']['channelTitle'],
+            'image' => 'path_to_image', // You can replace 'path_to_image' with the actual image path
+            'mp3_path' => asset($mp3Path), // Store the path to the MP3 file
+        ]);
+    
+        $song->save();
 
         return response()->json([
             "info" => $videoInfo,
-            "link" => $link], 200);
+            "link" => "link"], 200);
     }
-    public function index()
-    {
-        $query = Song::query();
-        $imgName = 'pingui.png';
 
-        $link = asset("storage/$imgName");
-        $contents = Storage::get('mp3/Como Un Cristal.mp3');
-        Storage::move('old/file.jpg', 'new/file.jpg');
-        return response()->json(["data" => $query->get(), "link" => $link, "contents" => $contents]);
+
+    public function index(){
+        try{
+            $song = Song::query()->get();
+
+            return response()->json($song);
+
+        } catch(\Throwable $th){
+            return response()->json(['message' => $th->getMessage()]);
+        }
     }
+    /* public function index()
+    {
+        $path = storage_path('app/public/mp3/Como Un Cristal.mp3');
+
+        if (file_exists($path)) {
+            return response()->file($path);
+        }
+    } */
 
     public function download()
     {
