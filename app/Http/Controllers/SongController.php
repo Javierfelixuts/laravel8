@@ -30,7 +30,7 @@ class SongController extends Controller
     private function downloadMp3FromYouTube($videoLink)
     {
         // Execute yt-dlp command to download audio
-        $command = "yt-dlp --extract-audio --audio-format mp3 -o \"mp3/%(title)s.%(ext)s\" -- $videoLink";
+        $command = "yt-dlp --extract-audio --write-info-json --audio-format mp3 -o \"mp3/%(title)s.%(ext)s\" -- $videoLink";
         $output = shell_exec($command);
 
         echo('output: ' .  $output);
@@ -41,6 +41,8 @@ class SongController extends Controller
             $mp3Path = $matches[1];
             return $mp3Path;
         }
+
+
 
         // Return null if the path cannot be determined
         return null;
