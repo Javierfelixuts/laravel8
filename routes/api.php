@@ -1,5 +1,6 @@
 <?php
 
+use App\Jobs\Logger;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,9 +25,15 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () use ($router) 
         $router->post('/', 'SongController@store');
         $router->get('/info', 'SongController@getVideoInfo');
         $router->get('/download', 'SongController@download');
-    });
-});
 
-Route::get('/greeting', function () {
-    return 'Hello World';
+    });
+
+    Route::get('/greeting', function () {
+        Logger::dispatchAfterResponse();
+        Logger::dispatch();
+        Logger::dispatch()->onQueue('secondary');
+
+        return response("FIN");
+    });
+
 });
