@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Song;
+use DateTime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Http;
@@ -68,12 +69,19 @@ class SongController extends Controller
         $mp3Path = $this->downloadMp3FromYouTube($request->videoLink);
         echo("mp3: " . $mp3Path);
 
+        $date_obj = DateTime::createFromFormat('Y-m-d\TH:i:s\Z', $videoInfo['items'][0]['snippet']['publishedAt']);
+        
+
+        // Formato de fecha y hora MySQL
+        $published_date = $date_obj->format('Y-m-d H:i:s');
+
         $song = new Song([
             'name' => $videoInfo['items'][0]['snippet']['title'],
             'description' => $videoInfo['items'][0]['snippet']['description'],
             'slug' => Str::slug($videoInfo['items'][0]['snippet']['title']),
             'author' => $videoInfo['items'][0]['snippet']['channelTitle'],
-            'image' => 'path_to_image', // You can replace 'path_to_image' with the actual image path
+            'image' => $videoInfo['items'][0]['snippet']['thumbnails']['default']['url'], // You can replace 'path_to_image' with the actual image path
+            'published_at' => $published_date, 
             'mp3_path' => asset($mp3Path), // Store the path to the MP3 file
         ]);
     

@@ -13,6 +13,7 @@ class Song extends Model
         'slug',
         'author',
         'image',
+        'published_at',
         'mp3_path',
     ];
     use HasFactory;

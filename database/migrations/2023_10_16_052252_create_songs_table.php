@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('author', 255);
             $table->string('image', 255);
             $table->string('mp3_path')->nullable();
+            $table->string('published_at')->nullable();
 
             $table->timestamps();
         });
