@@ -883,3 +883,806 @@ The a-ha channel is the official YouTube home of the Norwegian Pop trio a-ha, wh
 [2023-11-01 05:40:50] local.INFO: </br> JOb dispatched </br>  
 [2023-11-01 05:42:08] local.INFO: </br> JOb dispatched </br>  
 [2023-11-01 05:42:22] local.INFO: </br> JOb dispatched </br>  
+[2023-11-01 05:42:25] local.INFO: </br> JOb dispatched </br>  
+[2023-11-11 18:22:06] local.ERROR: Array to string conversion {"exception":"[object] (ErrorException(code: 0): Array to string conversion at C:\\projects\\laravel8\\app\\Http\\Controllers\\SongController.php:68)
+[stacktrace]
+#0 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Array to string...', 'C:\\\\projects\\\\lar...', 68)
+#1 C:\\projects\\laravel8\\app\\Http\\Controllers\\SongController.php(68): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Array to string...', 'C:\\\\projects\\\\lar...', 68)
+#2 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\SongController->getVideoInfo(Object(Illuminate\\Http\\Request))
+#3 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('getVideoInfo', Array)
+#4 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\SongController), 'getVideoInfo')
+#5 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#6 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#7 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#12 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#13 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#14 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#16 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#17 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#18 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#19 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#20 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#37 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#38 C:\\projects\\laravel8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#39 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\projects\\\\lar...')
+#40 {main}
+"} 
+[2023-11-11 18:24:14] local.ERROR: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\xF3n ofi...' for column `music_db`.`songs`.`mp3_path` at row 1 (Connection: mysql, SQL: insert into `songs` (`name`, `description`, `slug`, `author`, `image`, `mp3_path`, `updated_at`, `created_at`) values (Amar y Vivir 🎶 Canción oficial - Letra, Canta las canciones de Amar y Vivir con la letra de la canción Amar y Vivir, cantada por Ana María Estupiñán. Comparte las canciones originales de Amar y Vivir. Letra de la canción Amar y Vivir.
+
+Suscríbete [GRATIS] a nuestro canal en YouTube: http://bit.ly/2CHpld2
+
+Síguenos en Google: http://bit.ly/2m5tNMp
+https://posts.google.com/share/kCZHcr1q
+
+Nuestras Redes Sociales:
+
+Instagram: https://www.instagram.com/caracoltv
+Facebook: https://www.facebook.com/CaracolTV
+Pinterest: https://es.pinterest.com/caracoltv/, amar-y-vivir-cancion-oficial-letra, Caracol Televisión, path_to_image, http://127.0.0.1:2222/mp3\Amar y Vivir  Canci�n oficial - Letra.mp3, 2023-11-11 18:24:14, 2023-11-11 18:24:14)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF3n ofi...' for column `music_db`.`songs`.`mp3_path` at row 1 (Connection: mysql, SQL: insert into `songs` (`name`, `description`, `slug`, `author`, `image`, `mp3_path`, `updated_at`, `created_at`) values (Amar y Vivir 🎶 Canción oficial - Letra, Canta las canciones de Amar y Vivir con la letra de la canción Amar y Vivir, cantada por Ana María Estupiñán. Comparte las canciones originales de Amar y Vivir. Letra de la canción Amar y Vivir.
+
+Suscríbete [GRATIS] a nuestro canal en YouTube: http://bit.ly/2CHpld2
+
+Síguenos en Google: http://bit.ly/2m5tNMp
+https://posts.google.com/share/kCZHcr1q
+
+Nuestras Redes Sociales:
+
+Instagram: https://www.instagram.com/caracoltv
+Facebook: https://www.facebook.com/CaracolTV
+Pinterest: https://es.pinterest.com/caracoltv/, amar-y-vivir-cancion-oficial-letra, Caracol Televisión, path_to_image, http://127.0.0.1:2222/mp3\\Amar y Vivir  Canci�n oficial - Letra.mp3, 2023-11-11 18:24:14, 2023-11-11 18:24:14)) at C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:801)
+[stacktrace]
+#0 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(755): Illuminate\\Database\\Connection->runQueryCallback('insert into `so...', Array, Object(Closure))
+#1 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(581): Illuminate\\Database\\Connection->run('insert into `so...', Array, Object(Closure))
+#2 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(533): Illuminate\\Database\\Connection->statement('insert into `so...', Array)
+#3 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `so...', Array)
+#4 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3387): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `so...', Array, 'id')
+#5 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1966): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1333): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1298): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1137): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 C:\\projects\\laravel8\\app\\Http\\Controllers\\SongController.php(80): Illuminate\\Database\\Eloquent\\Model->save()
+#10 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\SongController->getVideoInfo(Object(Illuminate\\Http\\Request))
+#11 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('getVideoInfo', Array)
+#12 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\SongController), 'getVideoInfo')
+#13 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#14 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#15 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#20 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#21 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#22 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 C:\\projects\\laravel8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\projects\\\\lar...')
+#48 {main}
+
+[previous exception] [object] (PDOException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF3n ofi...' for column `music_db`.`songs`.`mp3_path` at row 1 at C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:580)
+[stacktrace]
+#0 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(580): PDOStatement->execute()
+#1 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(788): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('insert into `so...', Array)
+#2 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(755): Illuminate\\Database\\Connection->runQueryCallback('insert into `so...', Array, Object(Closure))
+#3 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(581): Illuminate\\Database\\Connection->run('insert into `so...', Array, Object(Closure))
+#4 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(533): Illuminate\\Database\\Connection->statement('insert into `so...', Array)
+#5 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `so...', Array)
+#6 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3387): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `so...', Array, 'id')
+#7 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1966): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#8 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1333): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#9 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1298): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#10 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1137): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#11 C:\\projects\\laravel8\\app\\Http\\Controllers\\SongController.php(80): Illuminate\\Database\\Eloquent\\Model->save()
+#12 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\SongController->getVideoInfo(Object(Illuminate\\Http\\Request))
+#13 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('getVideoInfo', Array)
+#14 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\SongController), 'getVideoInfo')
+#15 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#16 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#17 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#22 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#23 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#24 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#26 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#27 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#28 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#29 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#30 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#47 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#48 C:\\projects\\laravel8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#49 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\projects\\\\lar...')
+#50 {main}
+"} 
+[2023-11-11 18:24:14] local.ERROR: Malformed UTF-8 characters, possibly incorrectly encoded {"exception":"[object] (InvalidArgumentException(code: 0): Malformed UTF-8 characters, possibly incorrectly encoded at C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\JsonResponse.php:88)
+[stacktrace]
+#0 C:\\projects\\laravel8\\vendor\\symfony\\http-foundation\\JsonResponse.php(49): Illuminate\\Http\\JsonResponse->setData(Array)
+#1 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\JsonResponse.php(32): Symfony\\Component\\HttpFoundation\\JsonResponse->__construct(Array, 500, Array, false)
+#2 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(799): Illuminate\\Http\\JsonResponse->__construct(Array, 500, Array, 192)
+#3 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(555): Illuminate\\Foundation\\Exceptions\\Handler->prepareJsonResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\Database\\QueryException))
+#4 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(473): Illuminate\\Foundation\\Exceptions\\Handler->renderExceptionResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\Database\\QueryException))
+#5 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(51): Illuminate\\Foundation\\Exceptions\\Handler->render(Object(Illuminate\\Http\\Request), Object(Illuminate\\Database\\QueryException))
+#6 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(143): Illuminate\\Routing\\Pipeline->handleException(Object(Illuminate\\Http\\Request), Object(Illuminate\\Database\\QueryException))
+#7 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#9 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#11 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#12 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#13 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#16 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#17 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#18 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#19 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#36 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#37 C:\\projects\\laravel8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#38 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\projects\\\\lar...')
+#39 {main}
+"} 
+[2023-11-11 18:26:18] local.ERROR: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\xE1blame...' for column `music_db`.`songs`.`mp3_path` at row 1 (Connection: mysql, SQL: insert into `songs` (`name`, `description`, `slug`, `author`, `image`, `mp3_path`, `updated_at`, `created_at`) values (Beto Cuevas - Háblame (Video Oficial), &#169; 2009 WMG
+Háblame, beto-cuevas-hablame-video-oficial, Warner Music México, path_to_image, http://127.0.0.1:2222/mp3\Beto Cuevas - H�blame (Video Oficial).mp3, 2023-11-11 18:26:18, 2023-11-11 18:26:18)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xE1blame...' for column `music_db`.`songs`.`mp3_path` at row 1 (Connection: mysql, SQL: insert into `songs` (`name`, `description`, `slug`, `author`, `image`, `mp3_path`, `updated_at`, `created_at`) values (Beto Cuevas - Háblame (Video Oficial), &#169; 2009 WMG
+Háblame, beto-cuevas-hablame-video-oficial, Warner Music México, path_to_image, http://127.0.0.1:2222/mp3\\Beto Cuevas - H�blame (Video Oficial).mp3, 2023-11-11 18:26:18, 2023-11-11 18:26:18)) at C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:801)
+[stacktrace]
+#0 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(755): Illuminate\\Database\\Connection->runQueryCallback('insert into `so...', Array, Object(Closure))
+#1 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(581): Illuminate\\Database\\Connection->run('insert into `so...', Array, Object(Closure))
+#2 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(533): Illuminate\\Database\\Connection->statement('insert into `so...', Array)
+#3 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `so...', Array)
+#4 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3387): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `so...', Array, 'id')
+#5 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1966): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1333): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1298): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1137): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 C:\\projects\\laravel8\\app\\Http\\Controllers\\SongController.php(80): Illuminate\\Database\\Eloquent\\Model->save()
+#10 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\SongController->getVideoInfo(Object(Illuminate\\Http\\Request))
+#11 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('getVideoInfo', Array)
+#12 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\SongController), 'getVideoInfo')
+#13 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#14 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#15 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#20 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#21 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#22 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 C:\\projects\\laravel8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\projects\\\\lar...')
+#48 {main}
+
+[previous exception] [object] (PDOException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xE1blame...' for column `music_db`.`songs`.`mp3_path` at row 1 at C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:580)
+[stacktrace]
+#0 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(580): PDOStatement->execute()
+#1 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(788): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('insert into `so...', Array)
+#2 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(755): Illuminate\\Database\\Connection->runQueryCallback('insert into `so...', Array, Object(Closure))
+#3 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(581): Illuminate\\Database\\Connection->run('insert into `so...', Array, Object(Closure))
+#4 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(533): Illuminate\\Database\\Connection->statement('insert into `so...', Array)
+#5 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `so...', Array)
+#6 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3387): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `so...', Array, 'id')
+#7 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1966): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#8 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1333): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#9 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1298): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#10 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1137): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#11 C:\\projects\\laravel8\\app\\Http\\Controllers\\SongController.php(80): Illuminate\\Database\\Eloquent\\Model->save()
+#12 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\SongController->getVideoInfo(Object(Illuminate\\Http\\Request))
+#13 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('getVideoInfo', Array)
+#14 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\SongController), 'getVideoInfo')
+#15 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#16 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#17 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#22 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#23 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#24 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#26 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#27 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#28 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#29 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#30 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#47 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#48 C:\\projects\\laravel8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#49 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\projects\\\\lar...')
+#50 {main}
+"} 
+[2023-11-11 18:26:18] local.ERROR: Malformed UTF-8 characters, possibly incorrectly encoded {"exception":"[object] (InvalidArgumentException(code: 0): Malformed UTF-8 characters, possibly incorrectly encoded at C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\JsonResponse.php:88)
+[stacktrace]
+#0 C:\\projects\\laravel8\\vendor\\symfony\\http-foundation\\JsonResponse.php(49): Illuminate\\Http\\JsonResponse->setData(Array)
+#1 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\JsonResponse.php(32): Symfony\\Component\\HttpFoundation\\JsonResponse->__construct(Array, 500, Array, false)
+#2 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(799): Illuminate\\Http\\JsonResponse->__construct(Array, 500, Array, 192)
+#3 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(555): Illuminate\\Foundation\\Exceptions\\Handler->prepareJsonResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\Database\\QueryException))
+#4 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(473): Illuminate\\Foundation\\Exceptions\\Handler->renderExceptionResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\Database\\QueryException))
+#5 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(51): Illuminate\\Foundation\\Exceptions\\Handler->render(Object(Illuminate\\Http\\Request), Object(Illuminate\\Database\\QueryException))
+#6 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(143): Illuminate\\Routing\\Pipeline->handleException(Object(Illuminate\\Http\\Request), Object(Illuminate\\Database\\QueryException))
+#7 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#9 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#11 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#12 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#13 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#16 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#17 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#18 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#19 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#36 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#37 C:\\projects\\laravel8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#38 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\projects\\\\lar...')
+#39 {main}
+"} 
+[2023-11-11 18:46:49] local.ERROR: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '2012-05-14UTC14:20:370' for column `music_db`.`songs`.`published_at` at row 1 (Connection: mysql, SQL: insert into `songs` (`name`, `description`, `slug`, `author`, `image`, `published_at`, `mp3_path`, `updated_at`, `created_at`) values (Beto Cuevas - Quiero Creer feat. Flo Rida (Video Oficial), Compra el sencillo "Quiero Creer Feat. Flo Rida" aquí: http://bit.ly/OfvUUr.
+"Quiero Creer Feat. Flo Rida" es el primer sencillo del nuevo álbum de Beto Cuevas "Transformación". Es el track #3 que se estrenó el 30 de abril de 2012 en las radioemisoras. 
+
+© WMG 2012
+
+Letra
+
+Quisiera ver mas allá
+de lo normal para encontrar
+aquello que en tu mente se durmió
+y a veces pide a gritos despertar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+porque mi vida aún transita en via
+de una transformación
+hasta que llegue el día en que seamos dos
+solo los dos
+
+Aquellos corazones que en tu vida viste pasar
+y en ciertas situaciones no supiste amar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+porque mi vida aún transita en via
+de una transformación
+hasta que llegue el día en que seamos dos
+
+Ya no espero más
+se abren caminos por donde estoy
+ya se donde voy
+nada ni nadie me va a parar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+
+Quiero creer
+quiero creer...
+
+Descarga Gratis la version remix en: www.ideasmusik.com
+
+facebook.com/BetoCuevasOficial
+@iambetocuevas
+@warnermusicmex
+
+www.warnermusic.com.mx, beto-cuevas-quiero-creer-feat-flo-rida-video-oficial, Warner Music México, https://i.ytimg.com/vi/8zrQsySTrqg/default.jpg, 2012-05-14UTC14:20:370, http://127.0.0.1:2222/mp3\Beto Cuevas - Quiero Creer feat. Flo Rida (Video Oficial).mp3, 2023-11-11 18:46:49, 2023-11-11 18:46:49)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '2012-05-14UTC14:20:370' for column `music_db`.`songs`.`published_at` at row 1 (Connection: mysql, SQL: insert into `songs` (`name`, `description`, `slug`, `author`, `image`, `published_at`, `mp3_path`, `updated_at`, `created_at`) values (Beto Cuevas - Quiero Creer feat. Flo Rida (Video Oficial), Compra el sencillo \"Quiero Creer Feat. Flo Rida\" aquí: http://bit.ly/OfvUUr.
+\"Quiero Creer Feat. Flo Rida\" es el primer sencillo del nuevo álbum de Beto Cuevas \"Transformación\". Es el track #3 que se estrenó el 30 de abril de 2012 en las radioemisoras. 
+
+© WMG 2012
+
+Letra
+
+Quisiera ver mas allá
+de lo normal para encontrar
+aquello que en tu mente se durmió
+y a veces pide a gritos despertar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+porque mi vida aún transita en via
+de una transformación
+hasta que llegue el día en que seamos dos
+solo los dos
+
+Aquellos corazones que en tu vida viste pasar
+y en ciertas situaciones no supiste amar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+porque mi vida aún transita en via
+de una transformación
+hasta que llegue el día en que seamos dos
+
+Ya no espero más
+se abren caminos por donde estoy
+ya se donde voy
+nada ni nadie me va a parar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+
+Quiero creer
+quiero creer...
+
+Descarga Gratis la version remix en: www.ideasmusik.com
+
+facebook.com/BetoCuevasOficial
+@iambetocuevas
+@warnermusicmex
+
+www.warnermusic.com.mx, beto-cuevas-quiero-creer-feat-flo-rida-video-oficial, Warner Music México, https://i.ytimg.com/vi/8zrQsySTrqg/default.jpg, 2012-05-14UTC14:20:370, http://127.0.0.1:2222/mp3\\Beto Cuevas - Quiero Creer feat. Flo Rida (Video Oficial).mp3, 2023-11-11 18:46:49, 2023-11-11 18:46:49)) at C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:801)
+[stacktrace]
+#0 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(755): Illuminate\\Database\\Connection->runQueryCallback('insert into `so...', Array, Object(Closure))
+#1 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(581): Illuminate\\Database\\Connection->run('insert into `so...', Array, Object(Closure))
+#2 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(533): Illuminate\\Database\\Connection->statement('insert into `so...', Array)
+#3 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `so...', Array)
+#4 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3387): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `so...', Array, 'id')
+#5 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1966): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1333): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1298): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1137): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 C:\\projects\\laravel8\\app\\Http\\Controllers\\SongController.php(81): Illuminate\\Database\\Eloquent\\Model->save()
+#10 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\SongController->getVideoInfo(Object(Illuminate\\Http\\Request))
+#11 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('getVideoInfo', Array)
+#12 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\SongController), 'getVideoInfo')
+#13 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#14 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#15 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#20 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#21 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#22 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 C:\\projects\\laravel8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\projects\\\\lar...')
+#48 {main}
+
+[previous exception] [object] (PDOException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '2012-05-14UTC14:20:370' for column `music_db`.`songs`.`published_at` at row 1 at C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:580)
+[stacktrace]
+#0 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(580): PDOStatement->execute()
+#1 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(788): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('insert into `so...', Array)
+#2 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(755): Illuminate\\Database\\Connection->runQueryCallback('insert into `so...', Array, Object(Closure))
+#3 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(581): Illuminate\\Database\\Connection->run('insert into `so...', Array, Object(Closure))
+#4 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(533): Illuminate\\Database\\Connection->statement('insert into `so...', Array)
+#5 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `so...', Array)
+#6 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3387): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `so...', Array, 'id')
+#7 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1966): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#8 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1333): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#9 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1298): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#10 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1137): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#11 C:\\projects\\laravel8\\app\\Http\\Controllers\\SongController.php(81): Illuminate\\Database\\Eloquent\\Model->save()
+#12 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\SongController->getVideoInfo(Object(Illuminate\\Http\\Request))
+#13 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('getVideoInfo', Array)
+#14 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\SongController), 'getVideoInfo')
+#15 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#16 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#17 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#22 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#23 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#24 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#26 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#27 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#28 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#29 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#30 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#47 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#48 C:\\projects\\laravel8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#49 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\projects\\\\lar...')
+#50 {main}
+"} 
+[2023-11-11 18:47:21] local.ERROR: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '2012-05-14T14:20:37Z' for column `music_db`.`songs`.`published_at` at row 1 (Connection: mysql, SQL: insert into `songs` (`name`, `description`, `slug`, `author`, `image`, `published_at`, `mp3_path`, `updated_at`, `created_at`) values (Beto Cuevas - Quiero Creer feat. Flo Rida (Video Oficial), Compra el sencillo "Quiero Creer Feat. Flo Rida" aquí: http://bit.ly/OfvUUr.
+"Quiero Creer Feat. Flo Rida" es el primer sencillo del nuevo álbum de Beto Cuevas "Transformación". Es el track #3 que se estrenó el 30 de abril de 2012 en las radioemisoras. 
+
+© WMG 2012
+
+Letra
+
+Quisiera ver mas allá
+de lo normal para encontrar
+aquello que en tu mente se durmió
+y a veces pide a gritos despertar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+porque mi vida aún transita en via
+de una transformación
+hasta que llegue el día en que seamos dos
+solo los dos
+
+Aquellos corazones que en tu vida viste pasar
+y en ciertas situaciones no supiste amar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+porque mi vida aún transita en via
+de una transformación
+hasta que llegue el día en que seamos dos
+
+Ya no espero más
+se abren caminos por donde estoy
+ya se donde voy
+nada ni nadie me va a parar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+
+Quiero creer
+quiero creer...
+
+Descarga Gratis la version remix en: www.ideasmusik.com
+
+facebook.com/BetoCuevasOficial
+@iambetocuevas
+@warnermusicmex
+
+www.warnermusic.com.mx, beto-cuevas-quiero-creer-feat-flo-rida-video-oficial, Warner Music México, https://i.ytimg.com/vi/8zrQsySTrqg/default.jpg, 2012-05-14T14:20:37Z, http://127.0.0.1:2222/, 2023-11-11 18:47:21, 2023-11-11 18:47:21)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '2012-05-14T14:20:37Z' for column `music_db`.`songs`.`published_at` at row 1 (Connection: mysql, SQL: insert into `songs` (`name`, `description`, `slug`, `author`, `image`, `published_at`, `mp3_path`, `updated_at`, `created_at`) values (Beto Cuevas - Quiero Creer feat. Flo Rida (Video Oficial), Compra el sencillo \"Quiero Creer Feat. Flo Rida\" aquí: http://bit.ly/OfvUUr.
+\"Quiero Creer Feat. Flo Rida\" es el primer sencillo del nuevo álbum de Beto Cuevas \"Transformación\". Es el track #3 que se estrenó el 30 de abril de 2012 en las radioemisoras. 
+
+© WMG 2012
+
+Letra
+
+Quisiera ver mas allá
+de lo normal para encontrar
+aquello que en tu mente se durmió
+y a veces pide a gritos despertar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+porque mi vida aún transita en via
+de una transformación
+hasta que llegue el día en que seamos dos
+solo los dos
+
+Aquellos corazones que en tu vida viste pasar
+y en ciertas situaciones no supiste amar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+porque mi vida aún transita en via
+de una transformación
+hasta que llegue el día en que seamos dos
+
+Ya no espero más
+se abren caminos por donde estoy
+ya se donde voy
+nada ni nadie me va a parar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+
+Quiero creer que tu alma es
+eterna y puede trascender
+quiero besar tus labios sin prisa
+lo puedo imaginar
+
+Quiero creer
+quiero creer...
+
+Descarga Gratis la version remix en: www.ideasmusik.com
+
+facebook.com/BetoCuevasOficial
+@iambetocuevas
+@warnermusicmex
+
+www.warnermusic.com.mx, beto-cuevas-quiero-creer-feat-flo-rida-video-oficial, Warner Music México, https://i.ytimg.com/vi/8zrQsySTrqg/default.jpg, 2012-05-14T14:20:37Z, http://127.0.0.1:2222/, 2023-11-11 18:47:21, 2023-11-11 18:47:21)) at C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:801)
+[stacktrace]
+#0 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(755): Illuminate\\Database\\Connection->runQueryCallback('insert into `so...', Array, Object(Closure))
+#1 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(581): Illuminate\\Database\\Connection->run('insert into `so...', Array, Object(Closure))
+#2 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(533): Illuminate\\Database\\Connection->statement('insert into `so...', Array)
+#3 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `so...', Array)
+#4 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3387): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `so...', Array, 'id')
+#5 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1966): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1333): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1298): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1137): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 C:\\projects\\laravel8\\app\\Http\\Controllers\\SongController.php(81): Illuminate\\Database\\Eloquent\\Model->save()
+#10 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\SongController->getVideoInfo(Object(Illuminate\\Http\\Request))
+#11 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('getVideoInfo', Array)
+#12 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\SongController), 'getVideoInfo')
+#13 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#14 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#15 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#20 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#21 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#22 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 C:\\projects\\laravel8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\projects\\\\lar...')
+#48 {main}
+
+[previous exception] [object] (PDOException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '2012-05-14T14:20:37Z' for column `music_db`.`songs`.`published_at` at row 1 at C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:580)
+[stacktrace]
+#0 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(580): PDOStatement->execute()
+#1 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(788): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('insert into `so...', Array)
+#2 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(755): Illuminate\\Database\\Connection->runQueryCallback('insert into `so...', Array, Object(Closure))
+#3 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(581): Illuminate\\Database\\Connection->run('insert into `so...', Array, Object(Closure))
+#4 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(533): Illuminate\\Database\\Connection->statement('insert into `so...', Array)
+#5 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `so...', Array)
+#6 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3387): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `so...', Array, 'id')
+#7 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1966): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#8 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1333): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#9 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1298): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#10 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1137): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#11 C:\\projects\\laravel8\\app\\Http\\Controllers\\SongController.php(81): Illuminate\\Database\\Eloquent\\Model->save()
+#12 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\SongController->getVideoInfo(Object(Illuminate\\Http\\Request))
+#13 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('getVideoInfo', Array)
+#14 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\SongController), 'getVideoInfo')
+#15 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#16 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#17 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#22 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#23 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#24 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#26 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#27 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#28 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#29 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#30 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#47 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#48 C:\\projects\\laravel8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#49 C:\\projects\\laravel8\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\projects\\\\lar...')
+#50 {main}
+"} 
