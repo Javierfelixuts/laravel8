@@ -34,13 +34,15 @@ class SongController extends Controller
         $command = "yt-dlp --extract-audio --write-info-json --audio-format mp3 -o \"mp3/%(title)s.%(ext)s\" -- $videoLink";
         $output = shell_exec($command);
 
-        echo('output: ' .  $output);
-
         // Parse the output to get the path to the downloaded MP3 file
         $matches = [];
         if (preg_match('/\[ExtractAudio\] Destination: (.*\.mp3)/', $output, $matches)) {
+            $array = explode(".mp3", $matches[1]);
+            $json_name = $array[0] . '.info.json';
             $mp3Path = $matches[1];
-            return $mp3Path;
+
+            return ['file_path' => $mp3Path,
+                    'json_info' => $json_name];
         }
 
 
@@ -66,8 +68,18 @@ class SongController extends Controller
 
         $videoInfo = $response->json();
         // Download and save the MP3 file using yt-dlp
-        $mp3Path = $this->downloadMp3FromYouTube($request->videoLink);
-        echo("mp3: " . $mp3Path);
+        $output = $this->downloadMp3FromYouTube($request->videoLink);
+        
+        $get_json = file_get_contents($output['json_info']);
+        $json_info = json_decode($get_json);
+
+        // Verificar si la decodificación fue exitosa y si existe la clave "title"
+        
+        if ($json_info !== null && property_exists($json_info, 'title')) {
+            $duration =  $json_info->duration;
+        } else {
+            return "No se pudo obtener el título"; // O alguna otra acción que desees realizar en caso de error
+        }
 
         $date_obj = DateTime::createFromFormat('Y-m-d\TH:i:s\Z', $videoInfo['items'][0]['snippet']['publishedAt']);
         
@@ -81,15 +93,16 @@ class SongController extends Controller
             'slug' => Str::slug($videoInfo['items'][0]['snippet']['title']),
             'author' => $videoInfo['items'][0]['snippet']['channelTitle'],
             'image' => $videoInfo['items'][0]['snippet']['thumbnails']['default']['url'], // You can replace 'path_to_image' with the actual image path
+            'duration' => $json_info->duration, 
+            'duration_string' => $json_info->duration_string, 
             'published_at' => $published_date, 
-            'mp3_path' => asset($mp3Path), // Store the path to the MP3 file
+            'mp3_path' => asset($output['file_path']), // Store the path to the MP3 file
+            'json_info' => asset($output['json_info']), // Store the path to the MP3 file
         ]);
     
         $song->save();
 
-        return response()->json([
-            "info" => $videoInfo,
-            "link" => "link"], 200);
+        return response()->json(["info" => $song], 200);
     }
 
 

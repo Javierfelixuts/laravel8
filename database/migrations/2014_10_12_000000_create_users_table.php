@@ -17,8 +17,12 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->unsignedBigInteger('favorite_song');
+
             $table->rememberToken();
             $table->timestamps();
+
+            $table->foreign('favorite_song')->references('id')->on('songs');
         });
     }
 
