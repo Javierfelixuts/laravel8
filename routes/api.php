@@ -23,6 +23,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () use ($router) 
     Route::group(['prefix' => 'songs'], function () use ($router) {
         $router->get('/', 'SongController@index');
         $router->post('/', 'SongController@store');
+        $router->get('/show/{id}', 'SongController@show');
         $router->get('/info', 'SongController@getVideoInfo');
         $router->get('/download', 'SongController@download');
 

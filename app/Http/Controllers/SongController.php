@@ -175,9 +175,16 @@ class SongController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        try {
+            $song = Song::find($id);
+
+            return response()->json($song);
+
+        } catch(\Throwable $th){
+            return response()->json(['message' => $th->getMessage()]);
+        }
     }
 
     /**
