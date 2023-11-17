@@ -12,6 +12,8 @@ class Song extends Model
         'description',
         'slug',
         'author',
+        'duration',
+        'duration_string',
         'image',
         'published_at',
         'mp3_path',
