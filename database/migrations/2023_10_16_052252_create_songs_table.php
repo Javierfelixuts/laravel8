@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('slug', 255)->unique();
             $table->string('author', 255);
             $table->string('image', 255);
+            $table->integer('duration');
+            $table->string('duration_string')->nullable();
             $table->string('mp3_path')->nullable();
             $table->string('published_at')->nullable();
 
