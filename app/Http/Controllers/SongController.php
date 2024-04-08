@@ -96,7 +96,7 @@ class SongController extends Controller
             'duration' => $json_info->duration, 
             'duration_string' => $json_info->duration_string, 
             'published_at' => $published_date, 
-            'mp3_path' => asset($output['file_path']), // Store the path to the MP3 file
+            'mp3_path' => public_path($output['file_path']), // Store the path to the MP3 file
             'json_info' => asset($output['json_info']), // Store the path to the MP3 file
         ]);
     
@@ -109,7 +109,6 @@ class SongController extends Controller
     public function index(){
         try{
             $song = Song::query()->get();
-
             return response()->json($song);
 
         } catch(\Throwable $th){
@@ -128,9 +127,9 @@ class SongController extends Controller
     public function download()
     {
         try {
-            $imgName = 'pingui.png';
-            $link = asset("storage/app/public/$imgName");
-            return Storage::download('pingui.png');
+            $link = public_path("/mp3/Josean_Log_Beso.mp3");
+
+            return response()->json($link);
             //return response()->download($link);
         } catch (\Throwable $th) {
             return response()->json(['message' => $th->getMessage()], 500);
@@ -180,7 +179,9 @@ class SongController extends Controller
         try {
             $song = Song::find($id);
 
-            return response()->json($song);
+            $link = public_path('/mp3/' . $song->name . '.mp3');
+
+            return response()->file($link);
 
         } catch(\Throwable $th){
             return response()->json(['message' => $th->getMessage()]);
