@@ -24,6 +24,8 @@ return new class extends Migration
             $table->string('published_at')->nullable();
 
             $table->timestamps();
+
+            $table->foreign("album_id")->references('id')->on('albums')->nullOnDelete();
         });
     }
 
